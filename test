@@ -1,0 +1,10 @@
+name = "SUYA"
+rain_percentage = 0.2
+temperture_in_c = 26
+
+likely_to_rain =
+rain_percentage > 0.30
+sun_is_dangerous =
+temperture_in_c >= 26
+
+put "Hello, #{name}, with a rain chance 0f #{rain_percentage * 100}% and a temperature 0f #{temperture_in_c} C we recommend that you " + (likely_to_rain ? "take an umbrella" : "enjoy this rain-free day") + "#{sun_is_dangerous ? ' and watch out for heatstroke!' : 'and fine weather.'}"
